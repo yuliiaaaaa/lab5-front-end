@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <form onsubmit="return validation(event)">
+      <div class="field">
+        <label class="label">ПІБ</label>
+        <div class="control has-icons-left has-icons-right">
+          <input
+            class="input"
+            type="text"
+            placeholder="ПІБ"
+            id="fullName"
+          />
+          <span class="icon is-small is-left">
+            <i class="fas fa-user"></i>
+          </span>
+          <span class="icon is-small is-right">
+            <i class="fas fa-exclamation-triangle"></i>
+          </span>
+        </div>
+        <p id="fullNameError" class="help is-danger is-hidden">
+          This fullName is invalid
+        </p>
+      </div>
+
+      <div class="field">
+        <label class="label">Адреса</label>
+        <div class="control has-icons-right">
+          <input
+            class="input"
+            type="text"
+            placeholder="Адреса"
+            id="address"
+          />
+          <span class="icon is-small is-right">
+            <i class="fas fa-exclamation-triangle"></i>
+          </span>
+        </div>
+        <p id="addressError" class="help is-danger is-hidden">
+          This address is invalid
+        </p>
+      </div>
+
+      <div class="field">
+        <label class="label">Email</label>
+        <div class="control has-icons-left has-icons-right">
+          <input
+            class="input"
+            type="email"
+            placeholder="hello@"
+            id="email"
+          />
+          <span class="icon is-small is-left">
+            <i class="fas fa-envelope"></i>
+          </span>
+          <span class="icon is-small is-right">
+            <i class="fas fa-exclamation-triangle"></i>
+          </span>
+        </div>
+        <p id="emailError" class="help is-danger is-hidden">
+          This email is invalid
+        </p>
+      </div>
+
+      <div class="field">
+        <label class="label">ID-card</label>
+        <div class="control has-icons-right">
+          <input
+            class="input"
+            type="text"
+            placeholder="ID-card"
+            id="idCard"
+          />
+          <span class="icon is-small is-right">
+            <i class="fas fa-exclamation-triangle"></i>
+          </span>
+        </div>
+        <p id="idCardError" class="help is-danger is-hidden">
+          This id-Card is invalid
+        </p>
+      </div>
+
+      <div class="field">
+        <label class="label">Дата народження</label>
+        <div class="control has-icons-right">
+          <input
+            class="input"
+            type="text"
+            placeholder="Дата народження"
+            id="dob"
+          />
+          <span class="icon is-small is-right">
+            <i class="fas fa-exclamation-triangle"></i>
+          </span>
+        </div>
+        <p id="dobError" class="help is-danger is-hidden">
+          This date is invalid
+        </p>
+      </div>
+
+      <div class="control">
+        <button class="button is-link">Submit</button>
+      </div>
+
+      <div id="output" class="is-hidden"></div>
+    </form>
+    <div id="output">
+      <h2>Validated Data</h2>
+      <p id="fullNameOutput"></p>
+      <p id="idCardOutput"></p>
+      <p id="dobOutput"></p>
+      <p id="emailOutput"></p>
+      <p id="addressOutput"></p>
+    </div>
+    <input type="color" id="colorPicker" />
+    <table>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+        <td>10</td>
+        <td>11</td>
+        <td
+          onmouseover="changeColor(this)"
+          onclick="changeColorByClick(this)"
+          ondblclick="changeByDblClick(this)"
+        >
+          12
+        </td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>14</td>
+        <td>15</td>
+        <td>16</td>
+        <td>17</td>
+        <td>18</td>
+      </tr>
+      <tr>
+        <td>19</td>
+        <td>20</td>
+        <td>21</td>
+        <td>22</td>
+        <td>23</td>
+        <td>24</td>
+      </tr>
+      <tr>
+        <td>25</td>
+        <td>26</td>
+        <td>27</td>
+        <td>28</td>
+        <td>29</td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td>31</td>
+        <td>32</td>
+        <td>33</td>
+        <td>34</td>
+        <td>35</td>
+        <td>36</td>
+      </tr>
+    </table>
+  </body>
+  <script src="script.js"></script>
+</html>
